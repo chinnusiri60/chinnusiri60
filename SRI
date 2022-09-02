@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>TABLE</title>
+<head>
+    <style>
+        .sharif{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color:paleturquoise;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body bgcolor="green">
+<h1 align="center">CLASS TIME TABLE 2022-23</h1>
+<h4 align="center">Class/Semester: 3-Year/1-Sem<br>Class In-charge: Dr.D.Nargaraju</h4>
+<h2 align="center">SECTION-1</h2>
+<table border="3" class="sharif">
+    <thead>
+        <th> time<br>&<br>date </th>
+        <th> 1 <br>9to9.50</th>
+        <th> 2 <br>9to9.50</th>
+        <th>  <br>9to9.50</th>
+        <th> 3 <br>9to9.50</th>
+        <th> 4 <br>9to9.50</th>
+        <th>  <br>9to9.50</th>
+        <th> 5 <br>9to9.50</th>
+        <th> 6 <br>9to9.50</th>
+        <th>  <br>9to9.50</th>
+        <th> 7 <br>9to9.50</th>
+        <th> 8 <br>9to9.50</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>MON</td>
+            <td> AI </td>
+              <td>DAA-LAB</td>
+               <td rowspan="6">BREAK</td>
+                <td colspan="2">DAA-LAB</td>
+                 <td rowspan="6">LUNCH <br>BREAK</td>
+                  <td colspan="2">CCD-2</td>
+                   <td rowspan="6">BREAK</td>
+                    <td>*DAA</td>
+                     <td>TOC</td>
+        </tr>
+        <tr> 
+        <td>TUE</td>
+         <td>DAA</td>
+         <td>AI</td>
+         <td>DAA</td>
+          <td>MPMC</td>
+           <td colspan="2">EXTRA-LAB</td>
+            <td>HC</td>
+             <td>SPORTS</td>
+         </tr>
+          <tr> 
+        <td>WED</td>
+        <td>AI</td>
+        <td>TOC</td>
+        <td colspan="2">CCD-2</td>
+        <td>MPMC</td>
+        <td>AI-LAB</td>
+        <td colspan="2">AI-LAB</td>
+         </tr>
+          <tr> 
+        <td>THU</td>
+        <td>TOC</td>
+        <td>CODING LAB</td>
+        <td colspan="2">CODING LAB</td>
+        <td>LIB</td>
+        <td>PS/TC</td>
+        <td>SAA</td>
+        <td>CM</td>
+         </tr>
+          <tr> 
+        <td>FRI</td>
+        <td>MPMC</td>
+        <td>DAA</td>
+        <td colspan="2">MPMC-LAB</td>
+        <td>TOC</td>
+        <td>MOOCS</td>
+        <td>*TOC</td>
+        <td>TBS</td>
+         </tr>
+          <tr> 
+        <td>SAT</td>
+        <td>DAA</td>
+        <td>AI</td>
+        <td>MPMC</td>
+        <td>TOC</td>
+        <td>AI</td>
+        <td>DAA</td>
+        <td>*AI</td>
+        <td>MPMC</td>
+         </tr>
+    </tbody>
+</table>
+</body>
+</html>
