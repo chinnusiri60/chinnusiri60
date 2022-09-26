@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=devic-width, initial-scale=1.0" />
+        <title>my page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+                font-family: "roboto", sans-serif;
+            }
+            .flex{
+                display: flex;
+                align-items: left;
+                justify-content: left;
+            }
+            body{
+                background-color: aliceblue;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+            }
+            header{
+                width: 100%;
+                padding: 20px;
+                justify-content: space-around !important;
+            }
+            header .logo img{
+                width: 50px;
+                height: 50px;
+            }
+            header h1{
+                padding-top: 10px;
+                padding-left: 5px;
+                cursor: pointer;
+            }
+            header h1 span{
+                color: rgb(8, 205, 8);
+            }
+            header ul{
+                margin-left: 5px;
+            }
+            header ul li{
+                padding: 5px 20px;
+                margin: 10px;
+                transition: all 0.5s;
+            }
+            header ul li a{
+                font-size: 30px;
+                color: rgba(0, 0, 0, 0.705);
+                font-weight: 600;
+                transition: color ease-out 0.6s;
+            }
+            header ul li a:hover{
+                color: greenyellow;
+            }
+            header input {
+                padding: 8px 20px;
+                background-color: rgb(9, 209, 9);
+                color:white;
+                font-weight: 800;
+                outline: none;
+                border: none;
+                margin-top: 10px;
+                font-size: 17px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.7s;
+            }
+            header input:hover{
+                transform: scale(1.09);
+                background-color: rgb(9, 209, 9, 0.683);
+            }
+            .container .content {
+                width: 100%;
+                height: 90vh;
+            }
+            .content .sri2{
+                width: 60%;
+                padding: 0 100px;
+            }
+            .content .sri2 h1 {
+                font-size: 50px;
+            }
+            .content .sri2 img{
+                width: 50px;
+                height: 50px;
+                margin-top: 8px;
+                margin-left: -10px;
+            }
+            .content .sri2 p{
+                font-size: 16px;
+                padding: 10px 0;
+                color:rgba(0, 0, 0, 0.728);
+            }
+            .content input{
+                padding: 10px 20px;
+                background-color: rgb(9, 209, 9);
+                color:white;
+                font-size: 16px;
+                font-weight: 700;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                margin-top: 20px;
+                cursor: pointer;
+                transition: all 0.7s;
+            }
+            .content input:hover{
+                transform: scale(1.09);
+                background-color: rgba(9, 209, 9, 0.683);
+            }
+            .content .siri{
+                margin-left: 15px;
+            }
+            .content .sharif{
+                width: 40%;
+                position: relative;
+            }
+            .content .sharif .sri{
+                position: absolute;
+                width: 470px;
+                left: 30px;
+                top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="flex">
+                <div class="logo flex">
+        </div>
+        <ul class="flex">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contact Us</a></li>
+           <li><a href="#">Blogs</a></li>
+        </ul>
+        <input type="button" value="login" />
+    </header>
+    <div class="content flex">
+        <div class="sri2">
+            <h1>MY NAME IS SHARIF,
+                <br>I'M FROM Narayana Engineering College
+            </h1>
+            <p><mark>am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.</mark>
+            </p>
+            <input type="button" value="join now" />
+            <input type="button" class="siri" value="see how it works >>" />
+        </div>
+        <div class="sharif">
+            <img class="sri" src="C:\Users\CHINNU\Desktop\sharif.jpg"  alt="" >
+        </div>
+    </div>
+</div>
+    </body>
+</html>
