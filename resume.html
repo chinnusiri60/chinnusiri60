@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            body{
+                background: #f9f9f9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .sharif{
+                position: relative;
+                width: 100%;
+                max-width: 1000px;
+                background: #fff;
+                margin: 50px;
+                box-shadow: 0 50px 75px rgba(0,0,0,0.1);
+                border-left: 50px solid #fff;
+                border-right: 50px solid #fff;
+            }
+            .sharif .top{
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                padding: 40px;
+                padding-bottom: 0;
+            }
+            .sharif .top .imgbx{
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .sharif .top .imgbx .box{
+                position: relative;
+                width: 70%;
+                min-width: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                aspect-ratio: 1;
+            }
+            .sharif .top .imgbx .box img{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .sharif .top .profiletext{
+                position: relative;
+                padding: 40px;
+                display: flex;
+                align-items: center;
+            }
+            .sharif .top .profiletext h3{
+                font-size: 3em;
+                letter-spacing:0.1em;
+                line-height: 1.2em;
+                font-weight: 600;
+                color: #333;
+            }
+            .sharif .top .profiletext h3 span{
+                position: relative;
+                font-size: 0.5em;
+                font-weight: 300;
+                top: -10px;
+            }
+            .sharif .sri{
+                position: relative;
+                min-height: 500px;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                padding: 0 40px 40px;
+            }
+            .sharif .sri h3{
+                border-left: 4px solid #b10909;
+                padding-left: 10px;
+                line-height: 1em;
+                font-weight: 600;
+                color: #333;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+                margin-top: 50px;
+            }
+            .sharif .sri ul{
+                position: relative;
+                margin: 10px 0;
+            }
+            .sharif .sri ul li{
+                list-style: none;
+                margin: 25px 0;
+                line-height: 1em;
+                color: #333;
+                cursor: pointer;
+                display: flex;
+            }
+            .sharif .sri ul li ion-icon{
+                font-size: 1.2em;
+                margin-right: 10px;
+                color:#3590d2
+            }
+            .sharif .sri ul.education li{
+                flex-direction: column;
+                margin: 25px 0;
+            }
+            h5{
+                color: #3590d2;
+            }
+            h4{
+                color:#333;
+                font-weight: 500;
+                margin: 5px 0;
+            }
+            h6{
+                color:#666;
+                font-weight: 300;
+                font-size: 1em;
+            }
+            .language li{
+                flex-direction:column ;
+            }
+            .language li span{
+                color: #333;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .language .percent{
+                position: relative;
+                width: 100;
+                background: #e3e3e3;
+                height: 6px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                display: block;
+                overflow: hidden;
+            }
+            .language .percent div{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: #3590d2;
+            }
+            .sharif .sri ul.interest{
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .sharif .sri ul.interest li{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 20px 0;
+            }
+            .sharif .sri ul.interest li .icon{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                background: #3590d2;
+                color: #fff;
+                display: flex;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+            }
+            .sharif .sri ul.interest li .icon ion-icon{
+                color: #fff;
+               margin-right: 0;
+
+            } 
+            p{
+                font-size: 300;
+            }
+            .jithin{
+                padding-left: 40px;
+            }
+            .about .box{
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0;
+            }
+            .about .box .student{
+                min-width: 150px;
+                margin-bottom: 10px;
+            }
+            .about .box2 .student h5{
+                color: #333;
+                font-weight: 600;
+            }
+            .about .box2 .student :nth-child(1){
+                color: #3590d2;
+            }
+            .about .box2 .sai h4{
+                color: #3590d2;
+                font-size: 16px;
+                margin: 0;
+            }
+            .about.skills .box2{
+                position: relative;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+            .about.skills .box2 h4{
+                color: #333;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .about.skills .box2 .percent{
+                position: relative;
+                width: 100%;
+                height: 10px;
+                background: #e3e3e3;
+            }
+            .about.skills .box2 .percent div{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: #3590d2;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="sharif">
+            <div class="top">
+                <div class="imgbx">
+                    <div class="box">
+                        <img src="C:\Users\CHINNU\Desktop\123.jfif">
+                    </div>
+                </div>
+                <div class="profiletext">
+                <h3>Shaik<br>Sharif<br><span>Web Developer</span></h3>
+            </div>
+        </div>
+        <div class="sri">
+            <div class="surya">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="text">+91 9603921934</span>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </span>
+                        <span class="text">sharifshaik31@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </span>
+                        <span class="text">github.com/chinnusiri60/</span>
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <ion-icon name="earth-outline"></ion-icon>
+                        </span>
+                        <span class="text">Andhra Pradesh, Nellore, India</span> 
+                    </li>
+                </ul>
+                <h3>Education</h3>
+                <ul class="education">
+                    <li>
+                        <h5>2020 - 2024</h5>
+                        <h4>BTech</h4>
+                        <h6>Narayana Engineering College, Gudur</h6>
+                    </li>
+                    <li>
+                        <li>
+                            <h5>2018 - 2020</h5>
+                            <h4>Inter Medate</h4>
+                            <h6>Sri Chaitanya Junior College</h6>
+                        </li>
+                    <li>
+                        <h5>2008 - 2018</h5>
+                        <h4>Schooling</h4>
+                        <h6>Sri Sai Vidyanikethan School, Nellore </h6>
+                    </li>
+                </ul>
+                <h3>Language</h3>
+                <ul class="language">
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div style="width: 75%";></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Hindi</span>
+                        <span class="percent">
+                            <div style="width: 30%";></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Telugu</span>
+                        <span class="percent">
+                            <div style="width: 95%";></div>
+                        </span>
+                    </li>
+                </ul>
+                <h3>Interest</h3>
+                <ul class="interest">
+                    <li><span class="icon"><ion-icon name="game-controller-outline"></ion-icon>
+                    </span>Gaming</li>
+                    <li><span class="icon"><ion-icon name="musical-notes-outline"></ion-icon>
+                    </span>Music</li>
+                    <li><span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>movies</li>
+                    <li><span class="icon"><ion-icon name="book-outline"></ion-icon></span>Books</li>
+                </ul>
+                </div>
+                <div class="jithin">
+                    <div class="about">
+                        <h3>Profile</h3>
+                        <p> am a person who is positive about every aspect of life. <br>There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen.<br> I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean.<br> I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves</p>
+                    </div>
+                    <div class="about"></div>
+                    <h3>Experiance</h3>
+                    <div class="box">
+                        <div class="student">
+                            <h5> Currently Studying </h5>
+                        </div>
+                        <div class="sai">
+                            <h4>Junior Developer</h4>
+                            <p>
+                                I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean.
+                            </p>
+                        </div>
+                        <div class="student">
+                            <h5> Currently Studying </h5>
+                        </div>
+                        <div class="sai">
+                            <h4>Junior Developer</h4>
+                            <p>
+                                I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean.
+                            </p>
+                    </div>
+                    <div class="about skills">
+                        <h3>Skills</h3>
+                        <div class="box2">
+                            <h4>HTML</h4>
+                            <span class="percent">
+                                <div style="width: 85%";></div>
+                            </span>
+                        </div>
+                        <div class="box2">
+                            <h4>CSS</h4>
+                            <span class="percent">
+                                <div style="width: 60%";></div>
+                            </span>
+                    </div>
+                    <div class="box2">
+                        <h4>JAVA SCRIPT</h4>
+                        <span class="percent">
+                            <div style="width: 5%";></div>
+                        </span>
+            </div>
+            <div class="box2">
+                <h4>PYTHON</h4>
+                <span class="percent">
+                    <div style="width: 10%";></div>
+                </span>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
