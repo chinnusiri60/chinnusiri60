@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport">
+        <title>profile card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'ubuntu', sans-serif;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            }
+            .sharif{
+                position: relative;
+                width: 300px;
+                height: 400px;
+                background: white;
+                box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+                border-radius: 10px;
+                border-top: 1px solid rgba(255,255,255,0);
+                backdrop-filter: blur(15px);
+                background: rgba(255,255,255,0.1);
+            }
+            .me{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height:100%;
+                overflow: hidden;
+                border-radius: 10px;
+                transform: translateY(30px) scale(0.5);
+                transform-origin: top;
+            }
+            .me img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+            .matter{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 30px;
+            }
+            .matter .about{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            .matter .about h2{
+                color: white;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            .matter .about h2 span{
+                font-size: 0.7em;
+                color:whitesmoke;
+                font-weight: 400;
+            }
+            .surya{
+                position: relative;
+                display: flex;
+                margin-top: 5px;
+            }
+            .surya li a{
+                display: flex;
+                width: 45px;
+                height: 45px;
+                background: whitesmoke;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: transparent;
+                font-size: 1.25em;
+                color: #444;
+                text-decoration: none;
+                box-shadow: 0 7px 15px rgba(0,0,0,0.1);
+                border-top: 1px solid rgba(0,0,0,0.05);
+                transition: 0.5s;
+            }
+            .surya li{
+                list-style: none;
+                margin: 4px;
+            }
+            .surya li a:hover{
+                background: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="sharif">
+           <div class="me">
+            <img src="sharif.jpg">
+           </div>
+           <div class="matter">
+            <div class="about">
+                <h2>SHAIK SHARIF<br><span>WEB DESINER</span></h2>
+                <ul class="surya">
+                    <li><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/chinnusiri60"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://web.whatsapp.com/s"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+           </div>
+         </div>
+    </body>
+</html>
